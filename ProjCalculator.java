@@ -5,10 +5,13 @@ public class ProjCalculator
     public static void main(String[] args)
     {
         Scanner scan = new Scanner(System.in);
+        System.out.println("Type the first Number then press Enter");
         int n1 = scan.nextInt();
+        System.out.println("Type any of these operator: +, -, x, / then press Enter");
         String operator = scan.next();
         if (operator.equals("+")||operator.equals("-")||operator.equals("/")||operator.equalsIgnoreCase("x"))
         {
+            System.out.println("Type the Second Number then press Enter");
             int n2 = scan.nextInt();
             AdvanceCalc obj = new AdvanceCalc();
             if (operator.equals("+"))
